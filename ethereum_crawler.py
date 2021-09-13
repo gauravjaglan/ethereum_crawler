@@ -18,8 +18,7 @@ def get_transaction_data(transaction_address, block_start, block_end, date):
             transactions['ethereum consumed'] = (transactions['gasPrice'].apply(float)*transactions['gasUsed'].apply(float))/1000000000000000000
         return transactions[['blockNumber','from','gas','gasPrice','ethereum consumed','timeStamp']], 200
     except Exception as e:
-        print(e)
-        return "",response.status_code
+        return str(e) ,response.status_code
 
 get_transaction_data("0xaa7a9ca87d3694b5755f213b5d04094b8d0f0a6f",'9000000','9099999', '2021-12-13')
 
