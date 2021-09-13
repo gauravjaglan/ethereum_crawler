@@ -50,3 +50,6 @@ curl --location --request GET 'http://192.168.0.105:5000/?tx_id=0xaa7a9ca87d3694
         > curl --location --request GET 'http://192.168.0.105:5000/?tx_id=0xaa7a9ca87d3694b5755f213b5d04094b8d0f0a6f&block_start=9000000&block_end=9099999&date=2020-12-12%0A'
 
         
+## Snapshot: 
+
+![image](https://user-images.githubusercontent.com/26508471/133064902-ed485248-7df8-45ce-811e-062278b1ca59.png)
