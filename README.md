@@ -13,7 +13,7 @@ Run flask application to extract and visualize assignment data:
 
 ```bash
 
-python3 applications.py
+python3 application.py
 
 ```
 
