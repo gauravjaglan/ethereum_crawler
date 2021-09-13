@@ -16,7 +16,9 @@ def get_transaction_data(transaction_address, block_start, block_end, date):
             transactions['gasPrice'] = transactions['gasPrice'].apply(float)
             transactions['gasUsed'] = transactions['gasUsed'].apply(float)
             transactions['ethereum consumed'] = (transactions['gasPrice'].apply(float)*transactions['gasUsed'].apply(float))/1000000000000000000
-        return transactions[['blockNumber','from','gas','gasPrice','ethereum consumed','timeStamp']], 200
+            return transactions[['blockNumber','from','gas','gasPrice','ethereum consumed','timeStamp']], 200
+        else:
+            return "",response.status_code
     except Exception as e:
         return str(e) ,response.status_code
 
