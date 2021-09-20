@@ -13,7 +13,6 @@ def eth_table():
     block_end = request.args.get("block_end")
     date = request.args.get("date")
 
-    #tx_id=0xaa7a9ca87d3694b5755f213b5d04094b8d0f0a6f&block_start=9000000&block_end=9099999&date=2019-12-13
     #df = get_transaction_data("0xaa7a9ca87d3694b5755f213b5d04094b8d0f0a6f",'9000000','9099999', '2019-12-13')
     crawler_response = get_transaction_data(tx_ad,block_start,block_end, date)
     if crawler_response[1] == 200:
