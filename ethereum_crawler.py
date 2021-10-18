@@ -3,7 +3,7 @@ import pandas
 
 
 def get_transaction_data(transaction_address, block_start, block_end, date):
-    url = r"https://api.etherscan.io/api?module=account&action=txlist&address={0}&startblock={1}&endblock={2}&sort=desc&apikey=2ZI2C4WI4KP36IJF3VUZGFPMZEME8HMAKH&timeStamp=1574748494".format(transaction_address, block_start, block_end)
+    url = r"https://api.etherscan.io/api?module=account&action=txlist&address={0}&startblock={1}&endblock={2}&sort=desc&apikey={3}&timeStamp=1574748494".format(transaction_address, block_start, block_end, api_key)
     #&page=1&offset=10
     payload = ""
     headers = {}
